@@ -31,6 +31,12 @@ The S-Lang library, provided in this package, provides the S-Lang
 extension language.  S-Lang's syntax resembles C, which makes it easy
 to recode S-Lang procedures in C if you need to.
 
+PackageName: S-Lang Library
+Custom:
+  Repo: https://github.com/sailfishos-chum/slang
+Categories:
+  - Library
+
 %package slsh
 Summary:	Interpreter for S-Lang scripts
 Requires:	%{name}%{?_isa} = %{version}-%{release}
@@ -43,6 +49,13 @@ interface for interactive use.
 This package also includes S-Lang modules that are distributed with
 the S-Lang distribution.
 
+PackageName: S-Lang SLSH
+Type: console-application
+Custom:
+  Repo: https://github.com/sailfishos-chum/slang
+Categories:
+  - Utility
+
 %package devel
 Summary:	Development files for the S-Lang extension language
 Requires:	%{name}%{?_isa} = %{version}-%{release}
@@ -54,6 +67,12 @@ you write S-Lang based applications is also included.
 
 Install the slang-devel package if you want to develop applications
 based on the S-Lang extension language.
+
+PackageName: S-Lang Library Development
+Custom:
+  Repo: https://github.com/sailfishos-chum/slang
+Categories:
+  - Library
 
 %prep
 %setup -q
